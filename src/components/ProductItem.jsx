@@ -44,7 +44,7 @@ export default function ProductItem({ product }) {
             </div>
 
             {/* Read More Button */}
-            <Link to={`/category/${product.category}/${product.id}`}
+            <Link to={`/category/${product.category}/${product.title}`}
                 
                 className="block bg-green-600 text-white text-center text-lg font-semibold py-3 hover:bg-green-700 transition-all duration-300"
             >

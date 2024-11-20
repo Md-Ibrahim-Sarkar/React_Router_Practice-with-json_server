@@ -31,7 +31,7 @@ async function singleProductDetails({ params }) {
     const conn = await api.get("/products");
 
     const upDatedData = await conn.data.filter(item => {
-        return item.id === params.productName ;
+        return item.title === params.productName ;
     })
     
     return upDatedData;
